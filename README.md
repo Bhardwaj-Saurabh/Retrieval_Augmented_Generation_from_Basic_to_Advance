@@ -1,0 +1,2 @@
+# Retrieval_Augmented_Generation_from_Basic_to_Advance
+A repository to understand and build RAG applications
