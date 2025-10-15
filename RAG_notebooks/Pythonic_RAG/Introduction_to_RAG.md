@@ -4,12 +4,12 @@
 
 LLMs are powerful tools capable of answering questions, summarizing text, generating code, and much more. However, they rely only on the data they were trained on, meaning they might not know about **recent events** or **specialized topics**.
 
-![LLM](../images/llm_interaction.png)
+![LLM](../../images/llm_interaction.png)
 *Source: RAG Coursera Course*
 
 RAG addresses this limitation by adding a **retrieval step** before the model generates its response.
 
-## 1.1 How RAG Works
+### 1.1 How RAG Works
 
 **1. Retrieval:**  
    When a user asks a question, the system first searches a **knowledge base** (a collection of reliable, possibly private, or domain-specific documents) to find the most relevant information related to the query.
@@ -20,16 +20,15 @@ RAG addresses this limitation by adding a **retrieval step** before the model ge
 **3. Generation:**  
    The LLM uses this augmented prompt to **generate a more accurate, up-to-date, and context-aware response**.
 
-![LLM](../images/rag.png)
-*Source: RAG Coursera Course*
+![LLM](../../images/vanilla_rag.svg)
 
-## 1.2 Why RAG Matters
+### 1.2 Why RAG Matters
 
 This approach helps LLMs perform better on tasks that require **specific**, **current**, or **specialized information** — just like how humans first gather information before reasoning and responding.  
 
 ---
 
-# 2. Applications of RAG (Retrieval-Augmented Generation)
+## 2. Applications of RAG (Retrieval-Augmented Generation)
 
 **Retrieval-Augmented Generation (RAG)** enhances large language models (LLMs) by combining them with an external knowledge base containing information the model didn’t see during training. This helps LLMs generate more accurate, context-aware, and up-to-date responses.  
 
@@ -64,57 +63,3 @@ Below are the main **applications of RAG**:
   - Contact lists  
   - Documents or notes  
 - This allows assistants to generate responses, drafts, or reminders that are **highly personalized and context-aware**.
-
----
-
-# 3. Architecture of a RAG
-
-A **RAG system** enhances the capabilities of a **Large Language Model (LLM)** by connecting it to an external **knowledge base** through a **retriever** component. This allows the LLM to access up-to-date or domain-specific information that was not part of its training data.
-
-## 3.1 Key Components
-
-**1. LLM (Large Language Model):**  
-   Generates the final response based on the user’s query and any additional retrieved information.
-
-**2. Knowledge Base:**  
-   A database of trusted and relevant documents — such as company policies, research papers, or other useful text — that the system can search.
-
-**3. Retriever:**  
-   The component that searches the knowledge base to find the most relevant documents related to the user’s query.
-
-## 3.2 How RAG Works (Step-by-Step)
-
-1. **User Input:**  
-   The user types a prompt (e.g., *"Why are hotels in Vancouver expensive this weekend?"*).
-
-2. **Retrieval Phase:**  
-   The **retriever** queries the **knowledge base** and fetches relevant documents.
-
-3. **Augmentation Phase:**  
-   The system combines (or *augments*) the user’s original prompt with the retrieved information, forming an **augmented prompt**.  
-   Example:  
-   > “Answer the following question: Why are hotels in Vancouver so expensive this weekend?  
-   > Here are five relevant articles that may help you respond…”
-
-4. **Generation Phase:**  
-   The augmented prompt is sent to the **LLM**, which generates a response using both its internal knowledge and the retrieved context.
-
-5. **Response:**  
-   The user receives an accurate, up-to-date, and context-aware answer — with a similar user experience to interacting with a normal LLM, though with slightly more latency.
-
-## 3.3 Advantages of RAG
-
-1. **Access to External Information:**  
-   Enables LLMs to use information not available during their training (e.g., company data, private documents, recent news).
-
-2. **Reduces Hallucinations:**  
-   Grounding the LLM’s responses in retrieved, factual data reduces the chance of generating false or generic content.
-
-3. **Keeps Models Up to Date:**  
-   Updating the **knowledge base** (instead of retraining the model) ensures that the system always has access to current information.
-
-4. **Supports Source Citation:**  
-   RAG systems can include source citations in the augmented prompt, allowing the LLM to reference them in its answers and improve transparency.
-
-5. **Improved Efficiency:**  
-   The **retriever** focuses on finding relevant facts, while the **LLM** focuses on generating natural, coherent text — allowing each to perform its strongest role.
