@@ -16,8 +16,8 @@ This 8-week course takes you from basic RAG concepts to deploying production-rea
 
 | Week | Lesson | Title | Blog | Notebook |
 |------|--------|-------|------|----------|
-| 1 | 1.1 | Building Pythonic RAG from Scratch | [📖](../RAG_notebooks/Pythonic_RAG/Introduction_to_RAG.md) | [📓](../RAG_notebooks/Vanilla_RAG/vanilla_rag.ipynb) | 
-| 2 | 2.1 | Implementing Vanilla RAG | [📖](../RAG_notebooks/Vanilla_RAG/vanilla_rag.md) | [📓](./notebooks/03-vanilla-rag.ipynb) |
+| 1 | 1.1 | Building Pythonic RAG from Scratch | [📖](RAG_notebooks/Pythonic_RAG/Introduction_to_RAG.md) | [📓](RAG_notebooks/Pythonic_RAG/Introduction_to_RAG.ipynb) | 
+| 2 | 2.1 | Implementing Vanilla RAG | [📖](RAG_notebooks/Vanilla_RAG/vanilla_rag.md) | [📓](RAG_notebooks/Vanilla_RAG/vanilla_rag.ipynb) |
 
 
 **Legend:** 📖 Blog Post | 📓 Jupyter Notebook | 💻 Source Code | 🔗 References & Resources
