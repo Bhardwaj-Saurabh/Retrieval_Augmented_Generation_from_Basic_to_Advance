@@ -8,7 +8,7 @@ A RAG (Retrieval-Augmented Generation) system uses a **retriever** to fetch rele
 
 ![LLM](../../images/vanilla_rag.svg)
 
-### 2. Core Components RAG
+## 2. Core Components RAG
 
 ### 2.1 Key Components
 
@@ -21,7 +21,7 @@ A RAG (Retrieval-Augmented Generation) system uses a **retriever** to fetch rele
 3. **Retriever:**  
    The component that searches the knowledge base to find the most relevant documents related to the user’s query.
 
-### 3. How RAG Works (Step-by-Step)
+## 3. How RAG Works (Step-by-Step)
 
 1. **User Input:**  
    The user types a prompt (e.g., *"Why are hotels in Vancouver expensive this weekend?"*).
