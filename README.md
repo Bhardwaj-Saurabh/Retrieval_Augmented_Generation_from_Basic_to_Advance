@@ -1,7 +1,6 @@
 # 🚀 Retrieval-Augmented Generation (RAG)
 ### From Basics to Production-Ready Systems
 
-
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)](https://www.python.org)
