@@ -14,7 +14,7 @@
 
 </div>
 
-![RAG](images/wallpaper.png)
+![RAG](images/wallpapers.png)
 
 ---
 
